@@ -1,0 +1,98 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: black;
+  color: #FFD700;
+  scroll-behavior: smooth;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+nav.nav-top {
+  background: #A10D2E;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+}
+
+nav a, .bottom-link, .contact-btn {
+  color: #FFD700;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+h1 span, h2 {
+  color: #FFD700;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px 0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.gallery img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.contact-btn {
+  background: #A10D2E;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.bottom-link {
+  display: block;
+  margin-top: 40px;
+  background: #A10D2E;
+  padding: 15px;
+  color: #FFD700;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.tagline {
+  font-style: italic;
+  color: #ccc;
+}
+
+.icon {
+  width: 24px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* Animation */
+.fade-in {
+  opacity: 0;
+  animation: fade 1.5s ease-in forwards;
+}
+
+@keyframes fade {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .gallery img {
+    width: 100px;
+  }
+}
